@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <section className={"h-screen w-full flex flex-col justify-center items-start relative"}>
 
-            <div className={"w-full h-full absolute z-0 left-0 top-0 "}>
+            <div className={"w-full h-full absolute z-0 left-0 top-0"}>
                 <PixelBlast
                     variant="circle"
                     pixelSize={6}
@@ -28,7 +28,7 @@ export default function Hero() {
                 />
             </div>
 
-            <div className={"flex flex-col relative pointer-events-none h-full justify-around max-h-[50vh] sm:max-h-[60vh] px-[20px] md:px-[80px] lg:px-[160px]"}>
+            <div className={"flex flex-col relative h-full justify-around max-h-[50vh] sm:max-h-[60vh] px-[20px] md:px-[80px] lg:px-[160px] z-50"}>
                 <div className={"flex flex-col "}>
                     <GradientText className={"text-sm md:text-base font-semibold font-sans"}>JOIN US FOR T1 STALL</GradientText>
                     <h1 className={"text-4xl sm:5xl md:text-6xl lg:text-8xl max-w-[80vw]"}>Deakin's Home for Software Engineers</h1>

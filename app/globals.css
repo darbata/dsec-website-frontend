@@ -49,11 +49,10 @@
 
 :root {
 	/*updated styles*/
+  /* TODO: refine and properly adopt colors */
 	--background: #0d0d0d;
-	--primary: #d63384;
 	--secondary: #9b5de5;
 	--foreground: #f7f7f7;
-	--accent: #19e6e6;
 	--accent2: #ff6b6b;
 	--notification: #c0ff00;
 
@@ -62,7 +61,9 @@
 	--card-foreground: oklch(0.145 0 0);
 	--popover: oklch(1 0 0);
 	--popover-foreground: oklch(0.145 0 0);
+	--primary: oklch(0.6 0.21 355.48);
 	--primary-foreground: oklch(0.985 0 0);
+	--secondary: oklch(0.84 0.14 194.81);
 	--secondary-foreground: oklch(0.205 0 0);
 	--muted: oklch(0.97 0 0);
 	--muted-foreground: oklch(0.556 0 0);
@@ -88,6 +89,13 @@
 }
 
 .dark {
+  --background: #0d0d0d;
+	--primary: #d63384;
+	--secondary: #9b5de5;
+	--foreground: #f7f7f7;
+	--accent2: #ff6b6b;
+	--notification: #c0ff00;
+  
 	--background: oklch(0.145 0 0);
 	--foreground: oklch(0.985 0 0);
 	--card: oklch(0.205 0 0);
@@ -96,7 +104,7 @@
 	--popover-foreground: oklch(0.985 0 0);
 	--primary: oklch(0.6 0.21 355.48);
 	--primary-foreground: oklch(0.205 0 0);
-	--secondary: oklch(0.269 0 0);
+	--secondary: oklch(0.84 0.14 194.81);
 	--secondary-foreground: oklch(0.985 0 0);
 	--muted: oklch(0.269 0 0);
 	--muted-foreground: oklch(0.708 0 0);
