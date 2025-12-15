@@ -18,10 +18,10 @@ export default function Navbar() {
 
     const navigationLinks: NavigationLink[] = [
         {label: "Home", href: "/"},
-        {label: "About Us", href: "/about-us"},
+        {label: "About Us", href: "/about"},
         {label: "Projects", href: "/projects"},
         {label: "Events", href: "/events"},
-        {label: "Contact Us", href: "/contact-us"},
+        {label: "Contact Us", href: "/contact"},
     ]
 
 	return (
