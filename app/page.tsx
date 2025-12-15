@@ -8,23 +8,36 @@ export default function Home() {
         <div className={"flex flex-col relative overflow-hidden"}>
             {/* TODO: uncomment this: <PreLoader />*/}
             <Hero />
-            <div className={"flex relative h-[100px]"} >
+            <div className={"relative w-full"}>
                 <Ribbon
                     text={["LEARN", "BUILD", "SHIP"]}
-                    className={"absolute -left-[20%] top-[50%] text-xl font-semibold py-2 bg-notification -rotate-5 z-10 text-background"}
+                    className={`absolute 
+                -left-[5%] 
+                sm:-left-[50%] 
+                top-0 
+                text-xl font-semibold py-2 bg-notification -rotate-5 z-10 text-background`}
                     icon={<CodeXml className={"w-5 h-5"}/>}
                 />
                 <Ribbon
                     text={["LEARN", "BUILD", "SHIP"]}
-                    className={"absolute -left-[20%] top-[50%] text-xl font-semibold py-2 bg-secondary rotate-5 z-20 text-background"}
+                    className={`absolute 
+                -left-[5%] 
+                sm:-left-[50%] 
+                top-0 
+                text-xl font-semibold py-2 bg-secondary rotate-5 z-20 text-background`}
                     icon={<CodeXml className={"w-5 h-5"}/>}
                 />
                 <Ribbon
                     text={["LEARN", "BUILD", "SHIP"]}
-                    className={"absolute -left-[20%] top-[50%] text-xl font-semibold py-2 bg-background rotate-12 z-30 text-foreground border-t border-b border-foreground"}
+                    className={`absolute
+                -left-[5%] 
+                sm:-left-[50%] 
+                top-0 
+                text-xl font-semibold py-2 bg-background rotate-12 z-30 text-foreground border-t border-b border-foreground`}
                     icon={<CodeXml className={"w-5 h-5"}/>}
                 />
             </div>
+
             <About />
         </div>
     );

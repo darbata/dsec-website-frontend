@@ -25,12 +25,12 @@ export default function Ribbon({text, icon, className} : {
 
     // generate copies of the slogan so they fill the entire width
     const copies : JSX.Element[] = []
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 10; i++) {
         copies.push(generate(text, i, icon))
     }
 
     return (
-        <div className={`flex whitespace-nowrap w-max gap-8 ${className}`}>
+        <div className={`flex whitespace-nowrap w-[200%] gap-8 ${className}`}>
             {copies.map((e, index) =>
                 <div
                     className={"infinite-scroll-item"} // custom defined in globals.css
