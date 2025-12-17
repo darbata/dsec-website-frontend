@@ -5,6 +5,7 @@ import "./globals.css";
 
 import { LoaderProvider } from "./loader-context";
 import Navbar from "@/components/ui/navbar/navbar";
+import AnnouncementBanner from "@/components/ui/AnnouncementBanner";
 
 //* Fonts
 const inter = Inter({
@@ -42,6 +43,7 @@ export default function RootLayout({
 			<body className={``}>
 				<ViewTransitions>
 					<LoaderProvider>
+                        <AnnouncementBanner />
 						<Navbar />
 						{children}
 					</LoaderProvider>
